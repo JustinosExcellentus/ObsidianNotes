@@ -1,0 +1,3 @@
+- Das Halteproblem ist semi-entscheidbar
+- Ist eine Sprache semi-entscheidbar, und sei das Komplement der Sprache semi-entscheidbar, so sind beide Sprachen entscheidbar
+- Eine Sprache ist genau dann semi-entscheidbar, wenn sie rekursiv-aufzählbar ist
