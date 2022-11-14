@@ -18,9 +18,9 @@ Die Mengen M und N sind gleichmächtig, falls eine bijektive Abbildung zwischem 
 M ist höchstens so mächtig wie  N, wenn es eine injektive Abbildung von M nach N gibt
 
 
-Bemerkung:
+Bemerkung: [Berechenbarkeit und Komplexität]
 
-Die Menge der Gödelnummern sind abzählbar, da Gödelnummern Wörtert über den Alphabet {0,1} sind, und somit auch die Menge der TMen, weil jede TM durch eine eindeutige Gödelnummer beschrieben wird. 
+Die Menge der Gödelnummern sind abzählbar, da Gödelnummern Wörter über den Alphabet {0,1} sind, und somit auch die Menge der TMen, weil jede TM durch eine eindeutige Gödelnummer beschrieben wird. 
 
 Das i-te Wort der Sprache bezeichnet die i.te 
 
