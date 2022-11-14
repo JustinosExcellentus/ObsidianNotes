@@ -62,7 +62,7 @@ Mengen können durch Worte beschrieben werden :
 
 #### Aussondern
 
->Sei M eine Menge und A(x) eine Aussageform, wobei x mit den Elementen von M belegt werden kann. Dann ist *$$\{ x \in M \mid A(x) \:ist \: wahr\} $$*
+>Sei M eine Menge und A(x) eine Aussageform, wobei x mit den Elementen von M belegt werden kann. Dann ist *$$\{ x \in M \mid A(x) \:ist \: wahr\}$$*
  eine Menge, nämlich die Teilmenge von M.
 
 - $\{ x \in M \mid x \: ist \: ungerade\}$

@@ -3,12 +3,16 @@
 
 Der direkte Beweis zeigt durch mathematisch korrekte  Operation, dass aus einer Aussage A eine Aussage B folgt
 
-###### Beispiel 
+#### Beispiel 
 
 Folgende Identät soll gezeigt werden (Binomischer Lehrsatz)
-$$ (a+b)^2 = a^2 + 2ab + b^2$$ 
+$$(a+b)^2 = a^2 + 2ab + b^2$$ 
+
 Dafür gilt:
-$$\begin{align}  (a+b)^2 = & \: (a+b)(a+b) \\ = & \:a^2 + ab + ba + b^2  \\ = & \: a^2 + ab + ab + b^2 \\ = & \: a^2 + 2ab + b^2 \end{align}$$ Somit wurde folgende Identität direkt bewiesen.
+
+$$\begin{align}  (a+b)^2 = & \: (a+b)(a+b) \\ = & \:a^2 + ab + ba + b^2  \\ = & \: a^2 + ab + ab + b^2 \\ = & \: a^2 + 2ab + b^2 \end{align}$$
+
+Somit wurde folgende Identität direkt bewiesen.
 
 ### Indirekter Beweis / Beweis durch Kontraposition
 
@@ -23,7 +27,7 @@ Formal gilt dies, da:
 
 Ein oft verwendetes Beispiel ist die Irrationalität der $\sqrt{2}$ .
 
-###### Beispiel
+#### Beispiel
 
 Wir wollen folgende Aussage beweisen: "$\sqrt{2}$ ist irrational".
 
