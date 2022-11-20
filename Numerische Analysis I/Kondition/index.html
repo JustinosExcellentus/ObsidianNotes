@@ -1,0 +1,591 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
+<title>Kondition - obsidian-mkdocs template</title>
+<link href="../../assets/stylesheets/main.472b142f.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.08040f6c.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="pink" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="obsidian-mkdocs template" class="md-header__button md-logo" data-md-component="logo" href="../.." title="obsidian-mkdocs template">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            obsidian-mkdocs template
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Kondition
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="pink" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="pink" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="obsidian-mkdocs template" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="obsidian-mkdocs template">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    obsidian-mkdocs template
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Justinos Notizen
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+          Analysis für Informatik
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Analysis für Informatik" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Analysis für Informatik
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Analysis%20f%C3%BCr%20Informatik/Abbildungen/">
+        Abbildungen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Analysis%20f%C3%BCr%20Informatik/Algebraische%20Strukturen/">
+        Algebraische Strukturen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Analysis%20f%C3%BCr%20Informatik/Die%20eulersche%20Zahl/">
+        Die eulersche Zahl
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Analysis%20f%C3%BCr%20Informatik/Folgen/">
+        Folgen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Analysis%20f%C3%BCr%20Informatik/Grenzwerte%20von%20Funktionen/">
+        Grenzwerte von Funktionen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Analysis%20f%C3%BCr%20Informatik/Komplexe%20Zahlen/">
+        Komplexe Zahlen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Analysis%20f%C3%BCr%20Informatik/Polarkoordinatenform/">
+        Polarkoordinatenform
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Analysis%20f%C3%BCr%20Informatik/Stetigkeit/">
+        Stetigkeit
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Analysis%20f%C3%BCr%20Informatik/Vollst%C3%A4ndigkeitsaxiom/">
+        Vollständigkeitsaxiom
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Analysis%20f%C3%BCr%20Informatik/Wichtige%20Folgen/">
+        Wichtige Folgen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Analysis%20f%C3%BCr%20Informatik/Zahlenmengen/">
+        Zahlenmengen
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+          Berechenbarkeit un Komplexität
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Berechenbarkeit un Komplexität" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Berechenbarkeit un Komplexität
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Berechenbarkeit%20un%20Komplexit%C3%A4t/Abz%C3%A4hlbarkeit/">
+        Abzählbarkeit
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Berechenbarkeit%20un%20Komplexit%C3%A4t/Berechenbarkeit/">
+        Berechenbarkeit
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Berechenbarkeit%20un%20Komplexit%C3%A4t/Beweis%20Halteproblem/">
+        Beweis Halteproblem
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Berechenbarkeit%20un%20Komplexit%C3%A4t/Beweis%20Unentscheidbarkeit%20des%20allgemeinen%20Halteproblems/">
+        Beweis Unentscheidbarkeit des allgemeinen Halteproblems
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Berechenbarkeit%20un%20Komplexit%C3%A4t/BuK%20Tutorium%20Mitschrift%2027.10.2022/">
+        BuK Tutorium Mitschrift 27.10.2022
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Berechenbarkeit%20un%20Komplexit%C3%A4t/Church-Turing-These/">
+        Church Turing These
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Berechenbarkeit%20un%20Komplexit%C3%A4t/Das%20Collatz-Problem/">
+        Das Collatz Problem
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Berechenbarkeit%20un%20Komplexit%C3%A4t/Halteproblem/">
+        Halteproblem
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Berechenbarkeit%20un%20Komplexit%C3%A4t/M%C3%A4chtigkeit/">
+        Mächtigkeit
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Berechenbarkeit%20un%20Komplexit%C3%A4t/Reduktion/">
+        Reduktion
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Berechenbarkeit%20un%20Komplexit%C3%A4t/Registermaschinen/">
+        Registermaschinen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Berechenbarkeit%20un%20Komplexit%C3%A4t/Sammlung%20von%20Entscheidungs-%20und%20Berechnungsproblemen/">
+        Sammlung von Entscheidungs  und Berechnungsproblemen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Berechenbarkeit%20un%20Komplexit%C3%A4t/Semi-Entscheibarkeit/">
+        Semi Entscheibarkeit
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Berechenbarkeit%20un%20Komplexit%C3%A4t/Unentscheidbare%20Probleme/">
+        Unentscheidbare Probleme
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Berechenbarkeit%20un%20Komplexit%C3%A4t/Unentscheidbarkeit%20des%20Diagonalsprachenkomplements/">
+        Unentscheidbarkeit des Diagonalsprachenkomplements
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          Diskrete Strukturen
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Diskrete Strukturen" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Diskrete Strukturen
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Diskrete%20Strukturen/Abbildungen/">
+        Abbildungen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Diskrete%20Strukturen/Aussagenlogik/">
+        Aussagenlogik
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Diskrete%20Strukturen/Beweisformen/">
+        Beweisarten
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Diskrete%20Strukturen/Gruppen/">
+        Gruppen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Diskrete%20Strukturen/Logische%20Terme/">
+        Logische Terme
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Diskrete%20Strukturen/Mathematische%20Symbole/">
+        Mathematische Symbole
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Diskrete%20Strukturen/Mengen/">
+        Mengen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Diskrete%20Strukturen/Monoid/">
+        Monoid
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Diskrete%20Strukturen/M%C3%A4chtigkeit/">
+        Mächtigkeit
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Diskrete%20Strukturen/Verkn%C3%BCpfungen/">
+        Verknüpfungen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Diskrete%20Strukturen/Wichtige%20Tautologien/">
+        Wichtige Tautologien
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
+          Numerische Analysis I
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Numerische Analysis I" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Numerische Analysis I
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Gleitpunktarithmetik/">
+        Gleitpunktarithmetik
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Kondition
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Maschinenzahlen/">
+        Maschinenzahlen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Normen/">
+        Normen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Numerik%20VL2/">
+        Numerik VL2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Stabilit%C3%A4t/">
+        Stabilität
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Taylorentwicklung/">
+        Taylorentwicklung
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6">
+          Programmierung
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Programmierung" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Programmierung
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Programmierung/Hoare-Kalk%C3%BCl/">
+        Hoare Kalkül
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Programmierung/Type-Casting/">
+        Type Casting
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7">
+          Technische Informatik
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Technische Informatik" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+          Technische Informatik
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Technische%20Informatik/Funktionale%20Vollst%C3%A4ndigkeit/">
+        Funktionale Vollständigkeit
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Technische%20Informatik/Zahlendarstellung/">
+        Zahlendarstellung
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>Kondition</h1>
+<p>Definition: </p>
+<p>Eine Kondition beschreibt die Empfindlichkeit von Fehlern in der Eingabe in Bezug auf die Fehler in der Ausgabe</p>
+<p>Kondition bei Vektoren</p>
+<p>Sei <span class="arithmatex">\(<span class="arithmatex">\(x = \left ( \begin{matrix} x_{1}\\ x_{2}\\ x_{3}\\ ...\\ x_{n} 
+\end{matrix} \right )\)</span>\)</span> Dann ist  <span class="arithmatex">\(f(x)\)</span> und <span class="arithmatex">\(\nabla f(x)\)</span> 
+$$f(x) =  \left (\begin{array}{r}</p>
+<p>f(x_{1})\
+f(x_{2})\
+f(x_{3})\
+.....\
+f(x_{n})\
+\end{array} \right ), \nabla f(x) = \left (\begin{array}{r}
+\frac{\partial f(x_{1})}{\partial x_{1}}\
+\frac{\partial f(x_{2})}{\partial x_{2}}\
+\frac{\partial f(x_{3})}{\partial x_{3}}\
+.....\
+\frac{\partial f(x_{n})}{\partial x_{n}}\
+\end{array} \right )$$</p>
+<p>Für einen fehlerhaften Vektor <span class="arithmatex">\(\tilde{x}\)</span> gilt nun laut Taylorpolynom 1. Ordnung an der Entwicklungsstelle x: 
+<span class="arithmatex">\(f(\tilde{x}) = f(x) + (\nabla f(x))^{T} \cdot (\tilde{x} -x) \Rightarrow \frac{f(\tilde{x}) - f(x)}{f(x)}  = \sum_{j=1}^{n} (\frac{\partial f(x)}{\partial x_{j}} \cdot \frac{x_{j}}{f(x)}) \cdot \frac{\tilde{x}_{j} - x_{j}}{x_{j]}} \dot{\leq} max_{1 \leq j \leq n}  (\frac{\partial f(x)}{\partial x_{j}} \cdot \frac{x_{j}}{f(x)}) =  max_{1 \leq j \leq n} (\phi _{i} (x)) := \kappa_{rel}\)</span></p>
+<p>Beispiele zur Kondition</p>
+<p>Sei <span class="arithmatex">\(f: \mathbb{R} \rightarrow \mathbb{R}, f(x) = e^{3x^{2}}\)</span> 
+Für <span class="arithmatex">\(\kappa_{rel} =  \vert \frac{f'(x)}{f(x)} \cdot x \vert = 6x^{2}\)</span> 
+Für <span class="arithmatex">\(x  &lt;&lt; 1 \Rightarrow r_{x} &gt; r_{f} \Rightarrow\)</span> Funktion ist gut konditioniert
+Für <span class="arithmatex">\(x  &gt;&gt; 1 \Rightarrow r_{x} &lt;  r_{f} \Rightarrow\)</span> Funktion ist schlecht konditioniert</p>
+<p>Für <span class="arithmatex">\(x = 0.1\)</span> und <span class="arithmatex">\(\tilde{x} =0.10001\)</span> gilt <span class="arithmatex">\(\kappa _ {rel} (0.1) = 6 \cdot 10 ^{-2}\)</span> 
+Also gilt für die Größenordnung, dass sich f(x) verbessern muss.
+<span class="arithmatex">\(r_{x} =10^{-4}, r_{f} = 6 \cdot 10^{-6} \Rightarrow\)</span> Gut konditioniert  </p>
+<p>Für <span class="arithmatex">\(x = 4\)</span> und <span class="arithmatex">\(\tilde{x} =4.0004\)</span> gilt <span class="arithmatex">\(\kappa _ {rel} (0.1) = 96\)</span> 
+Also gilt für die Größenordnung, dass sich f(x) verbessern muss.
+<span class="arithmatex">\(r_{x} =10^{-4}, r_{f} = 9 \cdot 10^{-3} \Rightarrow\)</span> Schlecht  konditioniert   </p>
+<p>Kondition bei Multiplikation</p>
+<p>\Sei <span class="arithmatex">\(f : \mathbb{R^{2}} \rightarrow \mathbb{R}\)</span> mit <span class="arithmatex">\(f(x_{1},x_{2}) = x_{1} \cdot x_{2}\)</span> <span class="arithmatex">\(\vert  x_{1}, x_{2} \in \mathbb{R}\)</span> 
+Berechnen der Verstärkungsfaktoren <span class="arithmatex">\(\phi_{1}, \phi_{2}\)</span>
+<span class="arithmatex">\(\phi_{1}(x) = \frac{\partial f(x)}{\partial x_{1}} \cdot \frac{x_{1}}{f(x)}\)</span> = <span class="arithmatex">\(x_{2}\cdot \frac{x_{1}}{x_{1} \cdot x_{2}}\)</span> = 1
+<span class="arithmatex">\(\phi_{2}(x) = \frac{\partial f(x)}{\partial x_{2}} \cdot \frac{x_{2}}{f(x)}\)</span> = <span class="arithmatex">\(x_{1}\cdot \frac{x_{2}}{x_{1} \cdot x_{2}}\)</span> = 1
+<span class="arithmatex">\(\kappa_{rel} = max_{1 \leq j \leq 2} ( \phi_{j})\)</span> = 1 <span class="arithmatex">\(\Rightarrow\)</span> Kondition ist unabhängig von x<span class="arithmatex">\(\Rightarrow\)</span> Sehr gut konditioniert</p>
+<p>Kondition bei Addition</p>
+<p>Sei <span class="arithmatex">\(f : \mathbb{R^{2}} \rightarrow \mathbb{R}\)</span> mit <span class="arithmatex">\(f(x_{1},x_{2}) = x_{1} + x_{2}\)</span> <span class="arithmatex">\(\vert  x_{1}, x_{2} \in \mathbb{R}\)</span> 
+Berechnen der Verstärkungsfaktoren <span class="arithmatex">\(\phi_{1}, \phi_{2}\)</span>
+<span class="arithmatex">\(\phi_{1}(x) = \frac{\partial f(x)}{\partial x_{1}} \cdot \frac{x_{1}}{f(x)}\)</span> = <span class="arithmatex">\(\frac{x_{1}}{x_{1} + x_{2}}\)</span>
+<span class="arithmatex">\(\phi_{2}(x) = \frac{\partial f(x)}{\partial x_{2}} \cdot \frac{x_{2}}{f(x)}\)</span> = <span class="arithmatex">\(\frac{x_{2}}{x_{1} + x_{2}}\)</span>
+<span class="arithmatex">\(\kappa_{rel} = max_{1 \leq j \leq 2} ( \phi_{j})\)</span> = <span class="arithmatex">\(max \{ \vert  \frac{x_{1}}{x_{1} + x_{2}}\vert, \vert  \frac{x_{2}}{x_{1} + x_{2}}\vert\} \Rightarrow\)</span>  Für <span class="arithmatex">\(x_{1}, x_{2} \in \mathbb{R}^{+} \Rightarrow \kappa_{rel} \leq 1 \Rightarrow\)</span> Sehr gut konditioniert. Für $ x_{1} \approx -x_{2}$ ist der Bruch sehr klein <span class="arithmatex">\(\Rightarrow \kappa_{rel} &gt;&gt; 1 \Rightarrow\)</span> Sehr schlecht konditioniert</p>
+<p>Kondition bei Nullstellen</p>
+<p>Für die kleinere Nullstelle <span class="arithmatex">\(y*\)</span> der Funktion  <span class="arithmatex">\(f(y) = y^{2} - 2y x _{1} + x_{2}\)</span>  mit <span class="arithmatex">\(x_{1}, x_{2} \in \mathbb{R}\)</span> gilt <span class="arithmatex">\(y* = x_{1} - \sqrt{x_{1}^{2}-x_{2}}\)</span> </p>
+<p>Berechnung der Konditionszahl aus <span class="arithmatex">\(max \{ \phi_{1} , \phi_{2}\}\)</span> </p>
+<p>Wenn <span class="arithmatex">\(x_{2} &lt; 0 \Rightarrow \phi_{1} \leq 1\)</span> und <span class="arithmatex">\(\kappa _{rel} \leq 1 \Rightarrow\)</span>  Gut konditioniert. Ist <span class="arithmatex">\(x_{1} &gt; 0, x_{2} &gt; 0, x_{1} \approx x_{2}\)</span> ist <span class="arithmatex">\(\phi_{1} &gt;&gt; 1 und \kappa_{rel} &gt;&gt; 1 \Rightarrow\)</span> Schlecht konditioniert, im schlimmsten Fall existiert durch einen Fehler keine Nullstelle mehr, falls <span class="arithmatex">\(x_{1}^{2} \ge x_{2} \land \tilde{x_{1}}^{2} &lt; \tilde{x_{2}}\)</span> gilt.</p>
+<p>Kondition bei Matrizen </p>
+<p>Sei <span class="arithmatex">\(f: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}\)</span> , <span class="arithmatex">\(f\)</span> linear.
+Sei <span class="arithmatex">\(B \in \mathbb{R}^{n \times n}\)</span>, mit <span class="arithmatex">\(det(B) \neq 0\)</span>  \
+<span class="arithmatex">\(f(x) = Bx\)</span>  bzw. <span class="arithmatex">\(B^{-1}f(x) = x\)</span> (i).\</p>
+<p>Für die gestörte Eingabe <span class="arithmatex">\(\tilde{x}\)</span> gilt:\
+<span class="arithmatex">\(f(\tilde{x})  = B\tilde{x}\)</span> <span class="arithmatex">\(\vert -f(x)\)</span> \
+<span class="arithmatex">\(f(\tilde{x})  -f(x) = B\tilde{x} - f(x) = B \tilde {x} - Bx = B(\tilde{x} - x)\)</span> <span class="arithmatex">\(\vert /f(x) : f(x) \neq 0\)</span> \
+<span class="arithmatex">\(\frac{f(\tilde{x})  -f(x) }{f(x)} = \frac{B(\tilde{x} - x)}{f(x)} \Rightarrow  \frac{\vert \vert f(\tilde{x})  -f(x) \vert \vert}{\vert \vert f(x)\vert \vert} = \frac{\vert \vert B(\tilde{x} - x)\vert \vert}{\vert \vert f(x)\vert \vert}\)</span>
+<span class="arithmatex">\(x = B^{-1}f(x) \Rightarrow \vert \vert x \vert \vert = \vert \vert B^{-1}f(x) \vert \vert \leq \vert \vert B^{-1} \vert \vert \cdot \vert \vert f(x) \vert \vert\)</span> 
+Da <span class="arithmatex">\(\vert \vert x \vert \vert , \vert \vert f(x) \vert \vert &gt; 0\)</span> gilt: <span class="arithmatex">\(\frac{\vert \vert x \vert \vert}{\vert \vert B^{-1} \vert \vert} \leq \vert \vert f(x) \vert \vert   \Rightarrow  \frac{f(\tilde{x})  -f(x) }{f(x)} = \frac{B(\tilde{x} - x)}{f(x)} \leq  \vert \vert B \vert \vert \cdot \vert \vert B^{-1} \vert \vert \cdot \frac{\vert \vert \tilde{x} -x \vert \vert}{\vert \vert x \vert \vert}\)</span> 
+Hierbei gilt <span class="arithmatex">\(\kappa_{rel} =  \vert \vert B \vert \vert \cdot \vert \vert B^{-1} \vert \vert\)</span> </p>
+<p>Beispiel Schnittpunkte</p>
+<p>Bestimmung des Schnittpunktes von 2 Geraden:
+<span class="arithmatex">\(u_{1} + 1.001 u_{2} = 1.999 6\)</span>
+<span class="arithmatex">\(u_{1} + 1.997 u_{2} = 4.003\)</span> </p>
+<p>Es ergibt die Lösung <span class="arithmatex">\(u = A^{-1} b\)</span> mit 
+$$A = \left (\begin{array}{rr} 
+3 &amp; 1.001 \
+6 &amp; 1.997 </p>
+<p>\end{array} \right ), b = \left (\begin{array}{c} 
+1.99 \
+4.003</p>
+<p>\end{array} \right ) \rightarrow  u = \left (\begin{array}{c} 
+1 \
+-1</p>
+<p>\end{array} \right ) \\$$</p>
+<p>Da wir auf <span class="arithmatex">\(\mathbb{R}^{n}\)</span> abbilden, aber <span class="arithmatex">\(\kappa _{rel} \in \mathbb{R}\)</span> ist, benutzen wir die Vektornorm um auf <span class="arithmatex">\(\mathbb{R}\)</span> abbzubilden.  Für die Norm von f(x) gilt : <span class="arithmatex">\(\vert \vert f(x) \vert \vert = \vert \vert Bx \vert \vert\)</span> Für die gestörte Eingabe <span class="arithmatex">\(\tilde{x}\)</span> gilt:
+<span class="arithmatex">\(\vert  \vert f(\tilde{x})\)</span> </p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Gleitpunktarithmetik" class="md-footer__link md-footer__link--prev" href="../Gleitpunktarithmetik/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Gleitpunktarithmetik
+            </div>
+</div>
+</a>
+<a aria-label="Next: Maschinenzahlen" class="md-footer__link md-footer__link--next" href="../Maschinenzahlen/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Maschinenzahlen
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+<script src="../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>
